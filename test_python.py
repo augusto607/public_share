@@ -1,28 +1,28 @@
-# Test de un script realizado en python - input y primer juego
+# Test of a script build in Python, input and first game.
 game = 1
 while game == 1:
-    print("Bienvenido al juego de adivinanzas")
-    print("Elija uno (1) para jugar o cero (0) para salir!")
-    inicio = input("Escoja 1 o 0 = ")
+    print("Welcome to the guessing game!")
+    print("Chose one (1) for start or zero (0) for exit!")
+    inicio = input("Chose 1 or 0 = ")
     if inicio == '1' :
-        print("\nExisten 5 palabras ocultas en este juego, intente adivinar una!!!")
-        dato = input("Ingrese una palabra: ")
-        lista = ['hola', 'mundo', 'chanchito', 'feliz', 'dragones']
+        print("\nIn this game exist 5 hidden words, try to guess at least one!!!")
+        dato = input("Enter a word to try: ")
+        lista = ['hi', 'word', 'pig', 'happy', 'dragons']
 
-        if lista.count(dato) > 0 :
-            print("\n-> YOU WIN! :) (√) La palabra existe: ", dato)
+        if lista.count(dato.lower()) > 0 :
+            print("\n-> YOU WIN! :) (√) The word exist: ", dato)
             print("\n#-----------------------------------#\n")
         else:
-            print("\n-> YOU LOSE! :( (X) La palabra no existe : ", dato)
+            print("\n-> YOU LOSE! :( (X) The word don't exist : ", dato)
             print("\n#-----------------------------------#\n")
 
     elif inicio == '0' :
         game == 0
-        print("\n...Saliendo del juego... Hasta pronto!!!")
+        print("\n...Leaving the game... See you soon!!!")
         break
 
     else:
-        print("\n¡ WARNING ! -- Favor indique un valor entre 0 y 1")
+        print("\n¡ WARNING ! -- Please, put value between 0 and 1")
         print("\n#-----------------------------------#\n")
         
 
