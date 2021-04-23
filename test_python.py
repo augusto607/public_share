@@ -1,4 +1,4 @@
-# Test of a script build in Python, input and first game.
+# Test of a script for jupyter notebook build in Python, input and first game.
 game = 1
 while game == 1:
     print("Welcome to the guessing game!")
